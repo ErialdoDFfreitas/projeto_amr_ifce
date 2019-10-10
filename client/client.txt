@@ -1,0 +1,10 @@
+# O mesmo que o Dockerfile 'server'.
+
+
+# O mesmo que o Dockerfile 'server'.
+# Importamos 'client.py' na pasta '/ client /'.
+
+
+# Gostaria de apresentar algo novo, o comando 'WORKDIR'.
+# Este comando altera o diretório base da sua imagem.
+# Aqui definimos '/ client /' como diretório base.

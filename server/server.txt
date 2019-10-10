@@ -1,0 +1,16 @@
+# Lembre-se, o dockerfile sempre deve começar importando a imagem base.
+# Usamos a palavra-chave 'FROM' para fazer isso.
+# Em nosso exemplo, queremos importar a imagem JAVA (do DockerHub).
+# Então, escrevemos 'oracle-java' para o nome da imagem e '8' para a versão.
+
+
+# Para iniciar nosso código JAVA, precisamos importar os arquivos 'server.java' e 'JavaServer.class(arquivo que surge depois de compilarmos o arquivo server.java)'.
+# Usamos a palavra-chave 'ADD' para fazer isso.
+# Lembre-se, o primeiro parâmetro 'server.java' e 'JavaServer.class' são os nomes dos arquivos no host.
+# O segundo parâmetro '/ server /' é o caminho para colocar o arquivo na imagem.
+# Aqui colocamos os arquivos na pasta '/ server /' da imagem.
+
+
+# Gostaria de apresentar algo novo, o comando 'WORKDIR'.
+# Este comando altera o diretório base da sua imagem.
+# Aqui definimos '/ server /' como diretório base (onde todos os comandos serão executados).

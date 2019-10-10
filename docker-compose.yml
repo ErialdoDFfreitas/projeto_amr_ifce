@@ -1,0 +1,26 @@
+version: "3"
+
+
+services:
+
+ server:
+
+    build: server/
+
+    command: javac ./server.java
+    command: java ./JavaServer.class
+
+    ports:
+      - 8080:8080
+
+
+ client:
+    
+    build: client/
+
+    command: python ./client.py
+
+    network_mode: host
+
+    depends_on:
+        - server
